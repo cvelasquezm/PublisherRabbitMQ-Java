@@ -11,14 +11,14 @@ import org.apache.log4j.Logger;
 public class Publisher extends AbstractPublisher {
 	
 	private static Logger log = Logger.getLogger(Publisher.class.getName());
+	private Connection connection;
 	
 	@Override
 	protected Channel connect() throws IOException, TimeoutException {
 		ConnectionFactory factory = new ConnectionFactory();
-		Connection connection;
-		Channel channel;
-		factory.setHost(HOST);
 		
+		Channel channel;
+		factory.setHost(HOST);		
 		connection = factory.newConnection();
 		channel = connection.createChannel();
 		return channel;
@@ -32,6 +32,8 @@ public class Publisher extends AbstractPublisher {
 			channel.queueDeclarePassive(QUEUE_NAME);
 			String message = PAYLOAD;
 			channel.basicPublish("", QUEUE_NAME, null, message.getBytes());
+			channel.close();
+			connection.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		} catch (TimeoutException e) {
