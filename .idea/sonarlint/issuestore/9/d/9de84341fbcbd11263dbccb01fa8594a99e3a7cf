@@ -1,0 +1,7 @@
+
+wsquid:S00116"SRename this field "EXCHANGE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ê»Àıÿÿÿÿ8™Ó”İ×-
+ssquid:S00116"ORename this field "HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£ÔÁøÿÿÿÿ8™Ó”İ×-
+vsquid:S00116"RRename this field "PAYLOAD" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(êüûÖúÿÿÿÿ8™Ó”İ×-
+ysquid:S00116
+"URename this field "QUEUE_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÎî¬şÿÿÿÿ8™Ó”İ×-
+{squid:S00116"WRename this field "VIRTUAL_HOST" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µñàüÿÿÿÿ8ØŞ’Ş×-

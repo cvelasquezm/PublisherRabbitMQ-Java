@@ -1,0 +1,4 @@
+rabbitmq\java\publisher\AbstractPublisher.class
+rabbitmq\java\publisher\Publisher.class
+rabbitmq\java\publisher\App.class
+rabbitmq\java\model\Person.class

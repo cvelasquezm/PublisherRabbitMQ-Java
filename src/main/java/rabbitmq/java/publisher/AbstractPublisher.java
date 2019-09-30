@@ -7,10 +7,16 @@ import com.rabbitmq.client.Channel;
 
 public abstract class AbstractPublisher {
 	
-	public String QUEUE_NAME = "";
-	public String HOST = "";
-	public String PAYLOAD = "";
-	
+	protected String QUEUE_NAME = "";
+	protected String HOST = "";
+	protected String PAYLOAD = "";
+
+	protected String VIRTUAL_HOST = "";
+
+	protected void logger(){
+		System.out.println(this.getClass().getName() + " -> Message sent successfully");
+	}
+
 	protected abstract Channel connect()  throws IOException, TimeoutException ;
 	public abstract void send();
 

@@ -1,0 +1,6 @@
+
+?squid:S11489"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+?squid:S11487"#Use a logger to log this exception.(€ÉÔ…ýÿÿÿÿ
+esquid:UselessImportCheck"5Remove this unused import 'com.rabbitmq.client.AMQP'.(È†úþÿÿÿÿÿ8×æ†Þ×-
+usquid:S00117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(üà¼’ûÿÿÿÿ8á†žÝ×-
+Csquid:S1068"'Remove this unused "log" private field.(èšÂåÿÿÿÿÿ
